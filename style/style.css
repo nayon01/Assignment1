@@ -60,7 +60,7 @@ nav {
   width: 90%;
   max-width: 900px;
   background-color: #ffffff;
-  margin: 152px auto auto auto;
+  margin: 152px auto 0;
   padding: 40px 25px;
   border: 1px solid #000;
   display: flex;
@@ -116,6 +116,7 @@ nav {
   margin: 20px 0;
 }
 
+/* Productive section */
 .pro-section {
   max-width: 1140px;
   margin: 0 auto;
@@ -135,6 +136,7 @@ nav {
   display: flex;
   gap: 80px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .productive-content {
@@ -152,22 +154,22 @@ nav {
   color: rgba(0, 0, 0, 0.5);
 }
 
+/* User card section */
 .user-card {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin: 10px auto;
   padding: 50px;
+  flex-wrap: wrap;
 }
 
 .card {
   width: 270px;
-  height: fit-content;
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 50px #ccc;
   padding: 30px;
   border-radius: 15px;
-  align-items: baseline;
 }
 
 .card-profile {
@@ -186,13 +188,13 @@ nav {
 }
 
 .card-titale {
-  margin: 5px;
+  margin: 5px 0;
   font-size: 25px;
   font-weight: bold;
 }
 
 .star {
-  margin: 10px 0 30px 0;
+  margin: 10px 0 30px;
 }
 
 .card-descripation {
@@ -212,15 +214,16 @@ nav {
 .user-section h2 {
   font-size: 45px;
   font-weight: 700;
-  margin: 40px 0 auto auto;
+  margin: 40px auto;
   text-align: center;
 }
 
+/* Focus section */
 .focus-section {
   width: 1140px;
   height: 520px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
   box-shadow: 0 0 50px #ccc;
   padding: 50px;
   border-radius: 14px;
@@ -232,29 +235,27 @@ nav {
 }
 
 .focus button {
+  display: block;
   margin: 5px auto;
 }
 
 .focus img {
   border-radius: 30px;
-  margin: 10px auto 10px auto;
+  margin: 10px auto;
 }
 
 .focus-desc {
   color: rgba(0, 0, 0, 0.5);
   font-size: 16px;
-  margin: 10px auto 10px auto;
+  margin: 10px auto;
 }
+
 .focus-title {
   font-size: 50px;
   margin: 0 auto;
-  /* font-weight: 900; */
 }
 
-.focus button {
-  display: block;
-}
-
+/* Form section */
 .form-section {
   display: flex;
   gap: 50px;
@@ -266,7 +267,6 @@ nav {
 .form-title {
   width: 50%;
   font-size: 60px;
-  align-items: center;
 }
 
 .form {
@@ -278,35 +278,28 @@ nav {
 }
 
 .form input,
-label,
-textarea {
-  justify-content: left;
+.form textarea {
   width: 100%;
-  padding: 20px 0;
-}
-
-.form input,
-textarea {
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 5px;
   padding: 20px;
-  border: 1px solid rgba(255, 255, 255, 1);
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
   box-shadow: 0 0 5pt 0.5pt #d3d3d3;
+  margin-bottom: 20px;
 }
 
+/* Footer section */
 footer {
-  justify-self: center;
   text-align: center;
   margin: 0 auto;
   width: 530px;
 }
 
 .footer-logo {
-  margin: 0 auto;
-
   font-size: 100px;
   color: #4e47ff;
   font-weight: 900;
+  margin: 0 auto;
 }
 
 .footer-desc {
@@ -316,7 +309,9 @@ footer {
 footer ul {
   display: flex;
   gap: 30px;
+  justify-content: center;
   margin-bottom: 100px;
+  padding: 0;
 }
 
 footer ul li {
